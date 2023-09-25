@@ -10,9 +10,6 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
-    TextView TvHelloWorld;
-    Button btnChangeColor;
-
     private TextView tvHelloWorld;
 
     @Override
@@ -39,10 +36,4 @@ public class MainActivity extends AppCompatActivity {
             }
         });
     }
-
-    // Color change
-//    Button btnChangeColor = findViewById(R.id.btnChangeColor);
-
-
-
 }
