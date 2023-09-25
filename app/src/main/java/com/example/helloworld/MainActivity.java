@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 import android.view.View;
+import android.widget.Button;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -17,10 +18,12 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         this.tvHelloWorld = findViewById(R.id.tvHelloWorld);
-    }
 
-    public void onBtnChangeTextClick(View view) {
-//        Toast.makeText(this, "Java is amazing!", Toast.LENGTH_LONG).show();
-        this.tvHelloWorld.setText("Hello Kaunas!");
+        Button btnChangeText = (Button) findViewById(R.id.btnChangeText);
+        btnChangeText.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                tvHelloWorld.setText("Hello Kaunas!");
+            }
+        });
     }
 }
