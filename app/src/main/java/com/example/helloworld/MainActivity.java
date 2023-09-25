@@ -36,5 +36,4 @@ public class MainActivity extends AppCompatActivity {
             }
         });
     }
-    // Adding a comment to revert it.
 }
