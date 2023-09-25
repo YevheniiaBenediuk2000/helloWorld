@@ -27,8 +27,6 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 tvHelloWorld.setTextColor(Color.parseColor("#d54b1a"));
-                btnChangeColor.setBackgroundColor(Color.parseColor("#d54b1a"));
-                btnChangeText.setBackgroundColor(Color.parseColor("#d54b1a"));
             }
         });
 
